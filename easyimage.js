@@ -260,6 +260,10 @@ exports.resize = function(options) {
 			args.push('-background')
 			args.push(options.background)
 		}
+		if (options.alpha) {
+			args.push('-alpha')
+			args.push(options.alpha)
+		}
     args.push(options.dst)
 
 		child = exec('convert', args, function(err, stdout, stderr) {
@@ -316,6 +320,10 @@ exports.crop = function(options) {
  		if (options.background) {
 			args.push('-background')
 			args.push(options.background)
+		}
+		if (options.alpha) {
+			args.push('-alpha')
+			args.push(options.alpha)
 		}
     args.push(options.dst)
 
@@ -380,6 +388,10 @@ exports.rescrop = function(options) {
  		if (options.background) {
 			args.push('-background')
 			args.push(options.background)
+		}
+		if (options.alpha) {
+			args.push('-alpha')
+			args.push(options.alpha)
 		}
     args.push(options.dst)
 
@@ -455,6 +467,10 @@ exports.thumbnail = function(options) {
 			if (options.background) {
 				args.push('-background')
 				args.push(options.background)
+			}
+			if (options.alpha) {
+				args.push('-alpha')
+				args.push(options.alpha)
 			}
 	    args.push(options.dst)
 
