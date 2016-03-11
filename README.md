@@ -58,6 +58,7 @@ fill - fill area flag, image is resized to completely fill the target crop dimen
 background - background color, defaults to "white". If specified, automatically flattens the image.
 flatten - if present, the image will be flattened (flattening removes alpha channel). Defaults to false.
 ignoreAspectRatio - if set to true, resize will ignore aspect ratio
+alpha - set to "remove" if you want to remove transparent pixel while converting from png/gif to jpg and avoid default black background
 ```
 
 ## Examples
